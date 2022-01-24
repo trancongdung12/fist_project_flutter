@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/DKImagePickerController/DKImagePickerController.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/dungtran/Desktop/Test/first/ios/build/Pods.build/Debug-iphonesimulator/DKImagePickerController.build/unextended-module.modulemap",
+    }]
+  }]
+}

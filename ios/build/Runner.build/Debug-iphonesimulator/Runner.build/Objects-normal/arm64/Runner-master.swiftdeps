@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
+options: "d56426f149c45a2fbca880398b80fe70d3ba02bf0b09f5f69dfff16a1fbc493a"
+build_start_time: [1642169893, 881695032]
+build_end_time: [1642169895, 177139043]
+inputs:
+  "/Users/dungtran/Desktop/Test/first/ios/Runner/AppDelegate.swift": [1637769877, 396975517]
