@@ -6,6 +6,8 @@ class AppColors {
   static const buttonText = Color(0xFFF4FFFD);
   static const fade = Color(0xFFB6C1DE);
 
+  static const inputBG = Color(0xFFF4F2F4);
+
   //light
   static const lightAccent = Color(0xFF0D0A03);
   static const lightHighlight = Color(0xFFBCB6FF);

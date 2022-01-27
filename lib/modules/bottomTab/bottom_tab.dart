@@ -25,7 +25,9 @@ class _BottomTabState extends State<BottomTab> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Theme.of(context).backgroundColor,
         selectedItemColor: AppColors.primary,
+        mouseCursor: null,
         iconSize: 20,
         selectedFontSize: 10,
         unselectedFontSize: 10,

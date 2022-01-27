@@ -20,7 +20,7 @@ class _PopularItemState extends State<PopularItem> {
         width: (Constants(context).width - 55) / 2,
         height: 140,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).backgroundColor,
           borderRadius: BorderRadius.circular(6),
           boxShadow: [
             BoxShadow(

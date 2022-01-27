@@ -16,13 +16,16 @@ class _BookingItemState extends State<BookingItem> {
       padding: const EdgeInsets.all(12),
       width: Constants(context).width - 40,
       margin: const EdgeInsets.only(left: 20, right: 20, top: 20),
-      decoration: BoxDecoration(boxShadow: [
-        BoxShadow(
-          color: Colors.grey.withOpacity(0.3),
-          spreadRadius: 0.3,
-          blurRadius: 2,
-        ),
-      ], borderRadius: BorderRadius.circular(10), color: Colors.white),
+      decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.3),
+              spreadRadius: 0.3,
+              blurRadius: 2,
+            ),
+          ],
+          borderRadius: BorderRadius.circular(10),
+          color: Theme.of(context).backgroundColor),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [

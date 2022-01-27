@@ -26,12 +26,12 @@ class Home extends GetView<HomeController> {
     Serivice('Other', AppIcon.ic_more),
   ];
 
-  Widget _seachWidget() {
+  Widget _seachWidget(BuildContext context) {
     return Container(
       height: 44,
       margin: const EdgeInsets.only(top: 60, bottom: 16, left: 20, right: 20),
       child: TextField(
-        style: const TextStyle(fontSize: 14),
+        style: Theme.of(context).textTheme.bodyText1,
         decoration: InputDecoration(
           hintText: "Search address or space name",
           prefixIcon: Icon(
@@ -39,7 +39,7 @@ class Home extends GetView<HomeController> {
             size: 20,
             color: Colors.grey[500],
           ),
-          fillColor: Colors.white,
+          fillColor: Theme.of(context).backgroundColor,
           filled: true,
           contentPadding: const EdgeInsets.symmetric(vertical: 0),
           focusedBorder: const OutlineInputBorder(
@@ -61,7 +61,7 @@ class Home extends GetView<HomeController> {
       height: 94,
       width: Constants(context).width - 40,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).backgroundColor,
         borderRadius: BorderRadius.circular(14),
         boxShadow: [
           BoxShadow(
@@ -185,7 +185,7 @@ class Home extends GetView<HomeController> {
               ),
               Column(
                 children: [
-                  _seachWidget(),
+                  _seachWidget(context),
                   Container(
                     margin: const EdgeInsets.only(left: 20),
                     child: Row(children: const [

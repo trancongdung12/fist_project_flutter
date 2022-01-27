@@ -68,7 +68,7 @@ class Login extends GetView<AuthController> {
                         onPress: () {
                           controller.login(context);
                         },
-                        title: 'Log in',
+                        title: 'login'.tr,
                       )),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

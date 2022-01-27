@@ -17,7 +17,7 @@ final ThemeData LightThemeData = ThemeData(
     ),
     headline2: TextStyle(
       color: AppColors.lightStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 18,
     ),
     headline3: TextStyle(
@@ -41,10 +41,12 @@ final ThemeData LightThemeData = ThemeData(
     ),
     bodyText1: TextStyle(
       color: AppColors.lightStrongText,
+      fontWeight: FontWeight.w400,
       fontSize: 14,
     ),
     bodyText2: TextStyle(
       color: AppColors.lightStrongText,
+      fontWeight: FontWeight.w400,
       fontSize: 12,
     ),
     subtitle1: TextStyle(

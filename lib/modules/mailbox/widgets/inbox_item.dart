@@ -23,6 +23,7 @@ class _InboxItemState extends State<InboxItem> {
           goToInbox();
         },
         child: Container(
+            color: Theme.of(context).backgroundColor,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
             child: Row(children: [
               SizedBox(

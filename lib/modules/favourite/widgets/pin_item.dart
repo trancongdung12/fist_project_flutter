@@ -15,7 +15,7 @@ class _PinItemState extends State<PinItem> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Theme.of(context).backgroundColor,
         borderRadius: BorderRadius.circular(6),
         boxShadow: [
           BoxShadow(

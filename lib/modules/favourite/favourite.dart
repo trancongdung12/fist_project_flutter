@@ -16,9 +16,9 @@ class _FavouriteState extends State<Favourite> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Favourites', style: TextStyle(color: Colors.black)),
-        backgroundColor: Colors.white,
-        elevation: 0.5,
+        title: Text('Favourites', style: Theme.of(context).textTheme.headline3),
+        backgroundColor: Theme.of(context).backgroundColor,
+        elevation: 0.3,
       ),
       body: Column(
         children: [
@@ -42,7 +42,7 @@ class _FavouriteState extends State<Favourite> {
                   margin: const EdgeInsets.only(top: 16),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
-                    color: Colors.white,
+                    color: Theme.of(context).backgroundColor,
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.3),

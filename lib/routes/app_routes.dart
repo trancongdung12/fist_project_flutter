@@ -9,4 +9,5 @@ abstract class Routes {
   static const MAILBOX = '/mailbox';
   static const SETTING = '/setting';
   static const INBOX = '/inbox';
+  static const PROFILE = '/profile';
 }

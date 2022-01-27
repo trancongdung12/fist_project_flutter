@@ -15,18 +15,29 @@ class _RowTextState extends State<RowText> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: () {
-          widget.onPress();
-        },
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(widget.title),
-              const Icon(AppIcon.ic_arrow_next, size: 20)
-            ],
+      onTap: () {
+        widget.onPress();
+      },
+      child: Container(
+          decoration: BoxDecoration(
+            border: const Border(
+              bottom: BorderSide(width: 0.3, color: Colors.black12),
+            ),
+            color: Theme.of(context).backgroundColor,
           ),
-        ));
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  widget.title,
+                  style: Theme.of(context).textTheme.bodyText1,
+                ),
+                const Icon(AppIcon.ic_arrow_next, size: 20)
+              ],
+            ),
+          )),
+    );
   }
 }

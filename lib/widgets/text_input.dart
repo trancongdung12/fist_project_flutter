@@ -1,3 +1,4 @@
+import 'package:DungxApp/themes/app_color.dart';
 import 'package:DungxApp/themes/app_icon.dart';
 import 'package:flutter/material.dart';
 
@@ -56,6 +57,7 @@ class _TextInputState extends State<TextInput> {
         margin: EdgeInsets.only(
             bottom: widget.mBottom ?? 16, top: widget.mTop ?? 0),
         child: TextFormField(
+          style: Theme.of(context).textTheme.bodyText1,
           controller: widget.controller,
           obscureText: isSecure ? widget.obscureText : isSecure,
           enableSuggestions: widget.enableSuggestions ?? false,

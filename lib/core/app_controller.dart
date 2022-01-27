@@ -1,6 +1,7 @@
 import 'package:DungxApp/core/theme/dark_theme.dart';
 import 'package:DungxApp/core/theme/light_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:get/get.dart';
 
@@ -18,9 +19,12 @@ class AppController extends GetxController {
   }
 
   void _restoreTheme() {
+    var brightness = SchedulerBinding.instance!.window.platformBrightness;
+    bool isDarkMode = brightness == Brightness.dark;
+
     bool isDark =
         box.read('isDark') ?? false; // null check for first time running this
-    if (isDark) {
+    if (isDarkMode) {
       themeData = DarkThemeData;
     } else {
       themeData = LightThemeData;

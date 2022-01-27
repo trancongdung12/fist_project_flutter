@@ -1,0 +1,18 @@
+final Map<String, String> en = {
+  'LOGIN': 'Log in',
+  'PROFILE': 'Profile',
+  'SETTINGS': 'Settings',
+  'ABOUTAPP': 'About App',
+  "LANGUAGE": "Language",
+  "NOTIFICATION": "Notification",
+  "INTRODUCTION": "Introduction",
+  "SERCURITY": "Sercurity",
+  "PRIVACY_POLICY": "Privacy & Policy",
+  "TERM_CONDITION": "Term & Condition",
+  "SHARE_FRIEND": "Share with friend",
+  "LOGOUT": "Logout",
+  "SELECT_LANGUAGE": "Select Language",
+  "ENGLISH": "English",
+  "VIETNAMESE": "Vietnamese",
+  "CANCEL": "Cancel",
+};

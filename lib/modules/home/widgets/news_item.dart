@@ -20,7 +20,7 @@ class _NewsItemState extends State<NewsItem> {
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(6),
-        color: Colors.white,
+        color: Theme.of(context).backgroundColor,
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.3),

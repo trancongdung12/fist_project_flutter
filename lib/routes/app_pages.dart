@@ -7,6 +7,7 @@ import 'package:DungxApp/modules/login/auth_binding.dart';
 import 'package:DungxApp/modules/login/login.dart';
 import 'package:DungxApp/modules/mailbox/mailbox.dart';
 import 'package:DungxApp/modules/mailbox/pages/inbox.dart';
+import 'package:DungxApp/modules/setting/pages/profile.dart';
 import 'package:DungxApp/modules/setting/setting.dart';
 import 'package:get/get.dart';
 
@@ -51,6 +52,10 @@ class AppPages {
     GetPage(
       name: Routes.INBOX,
       page: () => const Inbox(),
+    ),
+    GetPage(
+      name: Routes.PROFILE,
+      page: () => const Profile(),
     ),
   ];
 }

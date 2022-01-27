@@ -15,9 +15,9 @@ class _BookingState extends State<Booking> {
     return Scaffold(
         appBar: AppBar(
           title:
-              const Text('My Bookings', style: TextStyle(color: Colors.black)),
-          backgroundColor: Colors.white,
-          elevation: 0.5,
+              Text('My bookings', style: Theme.of(context).textTheme.headline3),
+          backgroundColor: Theme.of(context).backgroundColor,
+          elevation: 0.3,
         ),
         body: Column(
           children: [

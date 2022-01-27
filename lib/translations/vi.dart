@@ -1,0 +1,18 @@
+final Map<String, String> vi = {
+  'LOGIN': 'Đăng nhập',
+  'PROFILE': 'Hồ sơ cá nhân',
+  'SETTINGS': 'Cài đặt',
+  'ABOUTAPP': 'Về ứng dụng',
+  "LANGUAGE": "Ngôn ngữ",
+  "NOTIFICATION": "Thông báo",
+  "INTRODUCTION": "Giới thiệu",
+  "SERCURITY": "Bảo mật",
+  "PRIVACY_POLICY": "Chính sách & Bảo mật",
+  "TERM_CONDITION": "Điều khoản & Dịch vụ",
+  "SHARE_FRIEND": "Chia sẽ với bạn bè",
+  "LOGOUT": "Đăng xuất",
+  "SELECT_LANGUAGE": "Chọn ngôn ngữ",
+  "ENGLISH": "Tiếng Anh",
+  "VIETNAMESE": "Tiếng Việt",
+  "CANCEL": "Hủy",
+};
