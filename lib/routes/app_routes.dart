@@ -1,7 +1,8 @@
 part of 'app_pages.dart';
 
 abstract class Routes {
-  static const LOGIN = '/';
+  static const SPLASH = '/';
+  static const LOGIN = '/login';
   static const BOTTOM_TAB = '/BottomTab';
   static const HOME = '/home';
   static const BOOKING = '/booking';

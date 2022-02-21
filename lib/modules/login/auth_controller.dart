@@ -1,4 +1,5 @@
 import 'package:DungxApp/api/auth_repository.dart';
+import 'package:DungxApp/core/app_controller.dart';
 import 'package:DungxApp/models/request/login_request.dart';
 import 'package:DungxApp/routes/app_pages.dart';
 import 'package:DungxApp/utils/regex.dart';
@@ -15,8 +16,7 @@ class AuthController extends GetxController {
 
   @override
   void onInit() {
-    checkLogin();
-    // loadUser();
+    // checkLogin();
     super.onInit();
   }
 
@@ -29,6 +29,7 @@ class AuthController extends GetxController {
   final emailResetController = TextEditingController();
 
   void login(BuildContext context) async {
+    final appcontroller = Get.find<AppController>();
     if (loginFormKey.currentState!.validate()) {
       final res = await authRepository.login(
         LoginRequest(
@@ -37,9 +38,11 @@ class AuthController extends GetxController {
         ),
       );
       if (res!.token.isNotEmpty) {
+        appcontroller.setIsLogin(true);
         SharedPreferences pref = await SharedPreferences.getInstance();
         await pref.setString('token', res.token);
-        Get.offNamedUntil(Routes.BOTTOM_TAB, (route) => false);
+        // Get.offNamedUntil(Routes.BOTTOM_TAB, (route) => false);
+        Get.back();
       }
     }
   }
@@ -62,13 +65,13 @@ class AuthController extends GetxController {
     return null;
   }
 
-  void checkLogin() async {
-    SharedPreferences pref = await SharedPreferences.getInstance();
-    String? token = pref.getString('token');
-    if (token != null) {
-      Get.offNamedUntil(Routes.BOTTOM_TAB, (route) => false);
-    }
-  }
+  // void checkLogin() async {
+  //   SharedPreferences pref = await SharedPreferences.getInstance();
+  //   String? token = pref.getString('token');
+  //   if (token != null) {
+  //     Get.offNamedUntil(Routes.BOTTOM_TAB, (route) => false);
+  //   }
+  // }
 
   // Future<void> loadUser() async {
   //   final QueryResult result = await authRepository.getUser();

@@ -1,8 +1,8 @@
-import 'package:DungxApp/api/home_responsitory.dart';
+import 'package:DungxApp/api/mailbox_reponsitory.dart';
 import 'package:get/get.dart';
 
 class MailBoxController extends GetxController {
-  final HomeRepository homeRepository;
+  final MailBoxRepository mailboxRepository;
 
-  MailBoxController({required this.homeRepository});
+  MailBoxController({required this.mailboxRepository});
 }

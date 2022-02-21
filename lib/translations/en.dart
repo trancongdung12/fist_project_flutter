@@ -1,5 +1,5 @@
 final Map<String, String> en = {
-  'LOGIN': 'Log in',
+  'LOGIN': 'Login',
   'PROFILE': 'Profile',
   'SETTINGS': 'Settings',
   'ABOUTAPP': 'About App',

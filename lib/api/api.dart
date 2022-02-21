@@ -9,4 +9,7 @@ class Api {
       _baseUrl + 'mobile/locations?limit=10&offset=0&orderBy=-createdAt';
   static const eventsApi = _baseUrl +
       'mobile/events?limit=10&offset=0&filter={"isActive": true}&orderBy=-eventTime';
+
+  static const bookingsApi = _baseUrl +
+      'mobile/bookings/me?includes=extraServices&offset=0&limit=10&orderBy=-createdAt';
 }

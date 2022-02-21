@@ -9,14 +9,21 @@ import 'package:DungxApp/modules/mailbox/mailbox.dart';
 import 'package:DungxApp/modules/mailbox/pages/inbox.dart';
 import 'package:DungxApp/modules/setting/pages/profile.dart';
 import 'package:DungxApp/modules/setting/setting.dart';
+import 'package:DungxApp/modules/splash/splash_binding.dart';
+import 'package:DungxApp/modules/splash/splash_screen.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
-  static const INITIAL = Routes.LOGIN;
+  static const INITIAL = Routes.SPLASH;
 
   static final routes = [
+    GetPage(
+      name: Routes.SPLASH,
+      page: () => const SplashScreen(),
+      binding: SplashBinding(),
+    ),
     GetPage(
       name: Routes.LOGIN,
       page: () => Login(),

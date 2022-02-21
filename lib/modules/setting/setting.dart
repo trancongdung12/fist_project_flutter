@@ -27,28 +27,6 @@ class Setting extends GetView<SettingController> {
 
   @override
   Widget build(BuildContext context) {
-    void _modalBottomSheetMenu() {
-      showModalBottomSheet(
-          context: context,
-          builder: (builder) {
-            return Container(
-              height: 350.0,
-              color:
-                  Colors.transparent, //could change this to Color(0xFF737373),
-              //so you don't have to change MaterialApp canvasColor
-              child: Container(
-                  decoration: const BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10.0),
-                          topRight: Radius.circular(10.0))),
-                  child: const Center(
-                    child: Text("This is a modal sheet"),
-                  )),
-            );
-          });
-    }
-
     return Scaffold(
       appBar: AppBar(
         title:
@@ -60,12 +38,19 @@ class Setting extends GetView<SettingController> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            RowText(
-              title: "PROFILE".tr,
-              onPress: () {
-                Get.toNamed(Routes.PROFILE);
-              },
-            ),
+            Obx(() => appcontroller.isLogin.value
+                ? RowText(
+                    title: "PROFILE".tr,
+                    onPress: () {
+                      Get.toNamed(Routes.PROFILE);
+                    },
+                  )
+                : RowText(
+                    title: "LOGIN".tr,
+                    onPress: () {
+                      Get.toNamed(Routes.LOGIN);
+                    },
+                  )),
             const SizedBox(height: 15),
             _titleWidget(context, 'ABOUTAPP'.tr),
             RowText(
@@ -101,10 +86,12 @@ class Setting extends GetView<SettingController> {
                 // appcontroller.changeLanguage('en_US');
               },
             ),
-            RowText(
-              title: "NOTIFICATION".tr,
-              onPress: () {},
-            ),
+            Obx(() => appcontroller.isLogin.value
+                ? RowText(
+                    title: "NOTIFICATION".tr,
+                    onPress: () {},
+                  )
+                : const SizedBox.shrink()),
             RowText(
               title: "INTRODUCTION".tr,
               onPress: () {},
@@ -124,14 +111,18 @@ class Setting extends GetView<SettingController> {
               onPress: () {},
             ),
             const SizedBox(height: 15),
-            RowText(
-              title: "LOGOUT".tr,
-              onPress: () {
-                controller.logout();
-              },
-            ),
+            Obx(() => appcontroller.isLogin.value
+                ? RowText(
+                    title: "LOGOUT".tr,
+                    onPress: () {
+                      controller.logout();
+                    },
+                  )
+                : const SizedBox.shrink()),
             const SizedBox(height: 10),
-            const BottomIcon()
+            BottomIcon(
+              isLogin: appcontroller.isLogin.value,
+            ),
           ],
         ),
       ),

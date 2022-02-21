@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
 options: "c77e6ed5792b214698af73ddd4e1272b5377a0f59341cd1291ea53d8ae307800"
-build_start_time: [1642952269, 719807147]
-build_end_time: [1642952279, 842522144]
+build_start_time: [1645081783, 106086969]
+build_end_time: [1645081787, 581635951]
 inputs:
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/NSImage+SwiftyGif.swift": [1642952251, 796618938]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/NSImageView+SwiftyGif.swift": [1642952251, 797770261]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/ObjcAssociatedWeakObject.swift": [1642952251, 796847343]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/SwiftyGifManager.swift": [1642952251, 797490596]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/UIImage+SwiftyGif.swift": [1642952251, 797092914]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/UIImageView+SwiftyGif.swift": [1642952251, 796379089]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/NSImage+SwiftyGif.swift": [1645029492, 506706476]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/NSImageView+SwiftyGif.swift": [1645029492, 508663892]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/ObjcAssociatedWeakObject.swift": [1645029492, 507020235]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/SwiftyGifManager.swift": [1645029492, 508241176]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/UIImage+SwiftyGif.swift": [1645029492, 507433414]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/SwiftyGif/SwiftyGif/UIImageView+SwiftyGif.swift": [1645029492, 506298780]

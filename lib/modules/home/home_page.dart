@@ -1,3 +1,4 @@
+import 'package:DungxApp/core/app_controller.dart';
 import 'package:DungxApp/modules/home/home_controller.dart';
 import 'package:DungxApp/themes/app_color.dart';
 import 'package:DungxApp/themes/app_constant.dart';
@@ -8,6 +9,7 @@ import 'package:DungxApp/modules/home/widgets/popular_item.dart';
 import 'package:DungxApp/widgets/skelton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
 class Serivice {
@@ -17,6 +19,7 @@ class Serivice {
 }
 
 class Home extends GetView<HomeController> {
+  final appcontroller = Get.find<AppController>();
   final List<Serivice> _services = [
     Serivice('Desk', AppIcon.ic_desk),
     Serivice('Meet up', AppIcon.ic_meetup),
@@ -188,18 +191,35 @@ class Home extends GetView<HomeController> {
                   _seachWidget(context),
                   Container(
                     margin: const EdgeInsets.only(left: 20),
-                    child: Row(children: const [
-                      Icon(
-                        AppIcon.ic_location,
-                        size: 20,
-                        color: Colors.white,
-                      ),
-                      SizedBox(width: 5),
-                      Text(
-                        '43 Nguyen Thi Ke, Son Tra, Da Nang',
-                        style: TextStyle(color: Colors.white),
-                      )
-                    ]),
+                    child:
+                        Obx(() => appcontroller.currentAddress.value.isNotEmpty
+                            ? Row(children: [
+                                const Icon(
+                                  AppIcon.ic_location,
+                                  size: 20,
+                                  color: Colors.white,
+                                ),
+                                const SizedBox(width: 5),
+                                Text(
+                                  appcontroller.currentAddress.value,
+                                  style: const TextStyle(color: Colors.white),
+                                )
+                              ])
+                            : Row(children: const [
+                                SizedBox(
+                                  height: 15,
+                                  width: 15,
+                                  child: CircularProgressIndicator(
+                                    color: Colors.white,
+                                    strokeWidth: 1,
+                                  ),
+                                ),
+                                SizedBox(width: 5),
+                                Text(
+                                  'Enable location',
+                                  style: TextStyle(color: Colors.white),
+                                )
+                              ])),
                   ),
                   _serviceWidget(context),
                 ],

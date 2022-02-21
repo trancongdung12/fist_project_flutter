@@ -39,6 +39,29 @@ dependencies: \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/file_picker/file_picker.framework/Headers/FileUtils.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/file_picker/file_picker.framework/Headers/FileInfo.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/file_picker/file_picker.framework/Headers/file_picker-umbrella.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geocoding/geocoding.framework/Headers/GeocodingPlugin.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geocoding/geocoding.framework/Modules/module.modulemap \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geocoding/geocoding.framework/Headers/GeocodingHandler.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geocoding/geocoding.framework/Headers/CLPlacemarkExtensions.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geocoding/geocoding.framework/Headers/geocoding-umbrella.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/GeolocatorPlugin.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Modules/module.modulemap \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/GeolocatorPlugin_Test.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/GeolocationHandler_Test.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/ServiceStatus.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/PermissionUtils.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/LocationMapper.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/LocationDistanceMapper.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/LocationAccuracyMapper.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/AuthorizationStatusMapper.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/ActivityTypeMapper.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/PositionStreamHandler.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/PermissionHandler.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/LocationServiceStreamHandler.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/LocationAccuracyHandler.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/GeolocationHandler.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/ErrorCodes.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/geolocator-umbrella.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/Headers/FLTImagePickerPlugin.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/Modules/module.modulemap \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/Headers/FLTPHPickerSaveImageToPathOperation.h \

@@ -1,9 +1,11 @@
+import 'package:DungxApp/models/response/booking_response.dart';
 import 'package:DungxApp/themes/app_color.dart';
 import 'package:DungxApp/themes/app_constant.dart';
 import 'package:flutter/material.dart';
 
 class BookingItem extends StatefulWidget {
-  const BookingItem({Key? key}) : super(key: key);
+  final Result booking;
+  const BookingItem({Key? key, required this.booking}) : super(key: key);
 
   @override
   _BookingItemState createState() => _BookingItemState();
@@ -32,9 +34,9 @@ class _BookingItemState extends State<BookingItem> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
-                '#SI0724589',
-                style: TextStyle(fontSize: 12),
+              Text(
+                '#${widget.booking.code}',
+                style: const TextStyle(fontSize: 12),
               ),
               Text(
                 '22/01/2021, 08:00',
@@ -49,13 +51,13 @@ class _BookingItemState extends State<BookingItem> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 86,
-                width: 86,
+                height: 80,
+                width: 80,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
-                    image: const DecorationImage(
+                    image: DecorationImage(
                         image: NetworkImage(
-                          'https://odinland.com/wp-content/uploads/2021/03/enouvo-space-an-nhon-5.jpg',
+                          widget.booking.location.thumbnail,
                         ),
                         fit: BoxFit.cover)),
               ),
@@ -65,9 +67,9 @@ class _BookingItemState extends State<BookingItem> {
                 children: [
                   Container(
                       margin: const EdgeInsets.only(bottom: 7, top: 4),
-                      child: const Text(
-                        'Enouvo Space 1',
-                        style: TextStyle(
+                      child: Text(
+                        widget.booking.location.name,
+                        style: const TextStyle(
                             color: Colors.black, fontWeight: FontWeight.w500),
                       )),
                   const Text(
@@ -89,9 +91,9 @@ class _BookingItemState extends State<BookingItem> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          '100.000 VND',
-                          style: TextStyle(
+                        Text(
+                          '${widget.booking.actualAmount} VND',
+                          style: const TextStyle(
                               fontSize: 12,
                               color: AppColors.primary,
                               fontWeight: FontWeight.w500),
@@ -106,9 +108,9 @@ class _BookingItemState extends State<BookingItem> {
                                   borderRadius: BorderRadius.circular(3),
                                   color: Colors.purple),
                             ),
-                            const Text(
-                              'UNCONFIRMED',
-                              style: TextStyle(
+                            Text(
+                              widget.booking.status,
+                              style: const TextStyle(
                                 fontSize: 10,
                                 color: Colors.purple,
                               ),
