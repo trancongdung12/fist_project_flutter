@@ -1,7 +1,6 @@
 import 'package:DungxApp/api/auth_repository.dart';
 import 'package:DungxApp/core/app_controller.dart';
 import 'package:DungxApp/models/request/login_request.dart';
-import 'package:DungxApp/routes/app_pages.dart';
 import 'package:DungxApp/utils/regex.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,7 +15,6 @@ class AuthController extends GetxController {
 
   @override
   void onInit() {
-    // checkLogin();
     super.onInit();
   }
 

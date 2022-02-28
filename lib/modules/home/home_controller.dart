@@ -1,4 +1,5 @@
 import 'package:DungxApp/api/home_responsitory.dart';
+import 'package:DungxApp/core/app_controller.dart';
 import 'package:DungxApp/models/response/banner_response.dart';
 import 'package:DungxApp/models/response/events_response.dart';
 import 'package:DungxApp/models/response/locations_response.dart';
@@ -14,6 +15,7 @@ class HomeController extends GetxController {
   final isLoadingBanner = false.obs;
   final isLoadingNearBy = false.obs;
   final isLoadingEvent = false.obs;
+  final appcontroller = Get.find<AppController>();
 
   @override
   void onInit() {
@@ -39,7 +41,13 @@ class HomeController extends GetxController {
   void getNearBy() async {
     try {
       isLoadingNearBy.value = true;
-      final res = await homeRepository.getLocations();
+      final res = await homeRepository.getLocations(
+        page: 1,
+        latitude: appcontroller.currentLocation.latitude,
+        longitude: appcontroller.currentLocation.longitude,
+        userLatitude: appcontroller.currentLocation.latitude,
+        userLongitude: appcontroller.currentLocation.longitude,
+      );
       if (res != null) {
         nearBy = res;
       }
