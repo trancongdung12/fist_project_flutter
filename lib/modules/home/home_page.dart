@@ -1,5 +1,6 @@
 import 'package:DungxApp/core/app_controller.dart';
 import 'package:DungxApp/modules/home/home_controller.dart';
+import 'package:DungxApp/routes/app_pages.dart';
 import 'package:DungxApp/themes/app_color.dart';
 import 'package:DungxApp/themes/app_constant.dart';
 import 'package:DungxApp/themes/app_icon.dart';
@@ -10,7 +11,6 @@ import 'package:DungxApp/widgets/skelton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 
 class Serivice {
   String name;
@@ -29,32 +29,114 @@ class Home extends GetView<HomeController> {
     Serivice('Other', AppIcon.ic_more),
   ];
 
-  Widget _seachWidget(BuildContext context) {
-    return Container(
-      height: 44,
-      margin: const EdgeInsets.only(top: 60, bottom: 16, left: 20, right: 20),
-      child: TextField(
-        style: Theme.of(context).textTheme.bodyText1,
-        decoration: InputDecoration(
-          hintText: "Search address or space name",
-          prefixIcon: Icon(
-            AppIcon.ic_search,
-            size: 20,
-            color: Colors.grey[500],
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          Stack(
+            children: [
+              Column(
+                children: [
+                  Container(
+                    height: 230,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/header.png'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              Column(
+                children: [
+                  _seachWidget(context),
+                  _currentLocation(),
+                  _serviceWidget(context),
+                ],
+              ),
+            ],
           ),
-          fillColor: Theme.of(context).backgroundColor,
-          filled: true,
-          contentPadding: const EdgeInsets.symmetric(vertical: 0),
-          focusedBorder: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-            borderSide: BorderSide(color: Colors.white, width: 0.0),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  _bannerWidget(context),
+                  _titleWidget(name: 'NearBy'),
+                  _nearByWidget(context),
+                  _titleWidget(name: 'News & Event', mTop: 6),
+                  const SizedBox(height: 18),
+                  _newsWidget(context),
+                ],
+              ),
+            ),
           ),
-          enabledBorder: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-            borderSide: BorderSide(color: Colors.white, width: 0.0),
-          ),
-        ),
+        ],
       ),
+    );
+  }
+
+  Widget _seachWidget(BuildContext context) {
+    return InkWell(
+      onTap: () => Get.toNamed(Routes.SEARCH),
+      child: Container(
+          height: 44,
+          margin:
+              const EdgeInsets.only(top: 60, bottom: 16, left: 20, right: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Row(
+            children: const [
+              Icon(
+                AppIcon.ic_search,
+                size: 20,
+                color: AppColors.mainL3,
+              ),
+              SizedBox(width: 10),
+              Text(
+                'Search address or space name',
+                style: TextStyle(color: AppColors.mainL3),
+              ),
+            ],
+          )),
+    );
+  }
+
+  Widget _currentLocation() {
+    return Container(
+      margin: const EdgeInsets.only(left: 20),
+      child: Obx(() => appcontroller.currentAddress.value.isNotEmpty
+          ? Row(children: [
+              const Icon(
+                AppIcon.ic_location,
+                size: 20,
+                color: Colors.white,
+              ),
+              const SizedBox(width: 5),
+              Text(
+                appcontroller.currentAddress.value,
+                style: const TextStyle(color: Colors.white),
+              )
+            ])
+          : Row(children: const [
+              SizedBox(
+                height: 15,
+                width: 15,
+                child: CircularProgressIndicator(
+                  color: Colors.white,
+                  strokeWidth: 1,
+                ),
+              ),
+              SizedBox(width: 5),
+              Text(
+                'Enable location',
+                style: TextStyle(color: Colors.white),
+              )
+            ])),
     );
   }
 
@@ -144,7 +226,12 @@ class Home extends GetView<HomeController> {
             : Wrap(
                 spacing: 15,
                 children: controller.nearBy.results.take(4).map((entry) {
-                  return PopularItem(location: entry);
+                  return PopularItem(
+                    location: entry,
+                    onPress: (locationId) {
+                      Get.toNamed(Routes.SPACE_DETAIL, arguments: locationId);
+                    },
+                  );
                 }).toList(),
               )));
   }
@@ -166,134 +253,31 @@ class Home extends GetView<HomeController> {
           ));
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+  Widget _titleWidget({required String name, double? mTop}) {
+    return Container(
+      margin: EdgeInsets.only(top: mTop ?? 26, left: 20, right: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Stack(
-            children: [
-              Column(
-                children: [
-                  Container(
-                    height: 230,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/header.png'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-              Column(
-                children: [
-                  _seachWidget(context),
-                  Container(
-                    margin: const EdgeInsets.only(left: 20),
-                    child:
-                        Obx(() => appcontroller.currentAddress.value.isNotEmpty
-                            ? Row(children: [
-                                const Icon(
-                                  AppIcon.ic_location,
-                                  size: 20,
-                                  color: Colors.white,
-                                ),
-                                const SizedBox(width: 5),
-                                Text(
-                                  appcontroller.currentAddress.value,
-                                  style: const TextStyle(color: Colors.white),
-                                )
-                              ])
-                            : Row(children: const [
-                                SizedBox(
-                                  height: 15,
-                                  width: 15,
-                                  child: CircularProgressIndicator(
-                                    color: Colors.white,
-                                    strokeWidth: 1,
-                                  ),
-                                ),
-                                SizedBox(width: 5),
-                                Text(
-                                  'Enable location',
-                                  style: TextStyle(color: Colors.white),
-                                )
-                              ])),
-                  ),
-                  _serviceWidget(context),
-                ],
-              ),
-            ],
+          Text(
+            name,
+            style: const TextStyle(
+                color: Colors.black,
+                fontSize: 16,
+                fontWeight: FontWeight.normal),
           ),
-          Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  _bannerWidget(context),
-                  Container(
-                    margin: const EdgeInsets.only(top: 26, left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          'Nearby',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal),
-                        ),
-                        Row(children: const [
-                          Text(
-                            'View all',
-                            style: TextStyle(
-                                color: AppColors.primary, fontSize: 12),
-                          ),
-                          SizedBox(width: 10),
-                          Icon(
-                            AppIcon.ic_arrow_next,
-                            size: 20,
-                            color: AppColors.primary,
-                          ),
-                        ])
-                      ],
-                    ),
-                  ),
-                  _nearByWidget(context),
-                  Container(
-                    margin: const EdgeInsets.only(top: 6, left: 20, right: 20),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          'News & Event',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal),
-                        ),
-                        Row(children: const [
-                          Text(
-                            'View all',
-                            style: TextStyle(
-                                color: AppColors.primary, fontSize: 12),
-                          ),
-                          SizedBox(width: 10),
-                          Icon(
-                            AppIcon.ic_arrow_next,
-                            size: 20,
-                            color: AppColors.primary,
-                          ),
-                        ])
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 18),
-                  _newsWidget(context),
-                ],
-              ),
+          Row(children: const [
+            Text(
+              'View all',
+              style: TextStyle(color: AppColors.primary, fontSize: 12),
             ),
-          ),
+            SizedBox(width: 10),
+            Icon(
+              AppIcon.ic_arrow_next,
+              size: 20,
+              color: AppColors.primary,
+            ),
+          ])
         ],
       ),
     );

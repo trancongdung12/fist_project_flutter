@@ -7,8 +7,11 @@ import 'package:DungxApp/modules/login/auth_binding.dart';
 import 'package:DungxApp/modules/login/login.dart';
 import 'package:DungxApp/modules/mailbox/mailbox.dart';
 import 'package:DungxApp/modules/mailbox/pages/inbox.dart';
+import 'package:DungxApp/modules/search/search.dart';
 import 'package:DungxApp/modules/setting/pages/profile.dart';
 import 'package:DungxApp/modules/setting/setting.dart';
+import 'package:DungxApp/modules/space_detail/space_detail.dart';
+import 'package:DungxApp/modules/space_detail/space_detail_binding.dart';
 import 'package:DungxApp/modules/splash/splash_binding.dart';
 import 'package:DungxApp/modules/splash/splash_screen.dart';
 import 'package:get/get.dart';
@@ -63,6 +66,16 @@ class AppPages {
     GetPage(
       name: Routes.PROFILE,
       page: () => const Profile(),
+    ),
+    GetPage(
+      name: Routes.SPACE_DETAIL,
+      page: () => SpaceDetail(),
+      binding: SpaceDetailBinding(),
+    ),
+    GetPage(
+      name: Routes.SEARCH,
+      page: () => Search(),
+      // binding: SpaceDetailBinding(),
     ),
   ];
 }

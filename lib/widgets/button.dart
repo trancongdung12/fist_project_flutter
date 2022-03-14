@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 class Button extends StatefulWidget {
   final Function onPress;
   final String title;
-  const Button({Key? key, required this.title, required this.onPress})
+  final double? width;
+  const Button(
+      {Key? key, required this.title, required this.onPress, this.width})
       : super(key: key);
 
   @override
@@ -16,7 +18,7 @@ class _ButtonState extends State<Button> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 48,
-      width: MediaQuery.of(context).size.width,
+      width: widget.width ?? MediaQuery.of(context).size.width,
       child: SizedBox(
           child: TextButton(
               style: ButtonStyle(

@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
 options: "b0e54e4a6b1406b0f18b48a138ac0808d0623bd6983b9850105d3181be64a6c5"
-build_start_time: [1645081809, 610725879]
-build_end_time: [1645081818, 828135013]
+build_start_time: [1647269348, 40109157]
+build_end_time: [1647269361, 165680885]
 inputs:
   "/Users/dungtran/Desktop/Test/first/ios/Pods/DKPhotoGallery/DKPhotoGallery/DKPhotoGallery.swift": [1645029492, 364510059]
   "/Users/dungtran/Desktop/Test/first/ios/Pods/DKPhotoGallery/DKPhotoGallery/DKPhotoGalleryContentVC.swift": [1645029492, 365348815]

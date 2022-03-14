@@ -11,4 +11,7 @@ abstract class Routes {
   static const SETTING = '/setting';
   static const INBOX = '/inbox';
   static const PROFILE = '/profile';
+  static const SPACE_DETAIL = '/spaceDetail';
+  static const SEARCH = '/search';
+  static const SEARCH_RESULT = '/searchResult';
 }

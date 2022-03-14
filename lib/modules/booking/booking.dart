@@ -1,15 +1,18 @@
 import 'package:DungxApp/core/app_controller.dart';
 import 'package:DungxApp/modules/booking/booking_controller.dart';
 import 'package:DungxApp/modules/booking/widgets/booking_item.dart';
+import 'package:DungxApp/themes/app_color.dart';
 import 'package:DungxApp/themes/app_constant.dart';
 import 'package:DungxApp/widgets/not_login_screen.dart';
-import 'package:DungxApp/widgets/skelton.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lazy_load_scrollview/lazy_load_scrollview.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class Booking extends GetView<BookingController> {
   final appcontroller = Get.find<AppController>();
-
+  final RefreshController refreshController =
+      RefreshController(initialRefresh: true);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,24 +43,36 @@ class Booking extends GetView<BookingController> {
     return Container(
         height: Constants(context).height - 193,
         padding: const EdgeInsets.only(top: 16),
-        child: Obx(
-          () => controller.isLoading.value
-              ? Center(
-                  child: Column(
-                    children: [1, 2, 3, 4].map((entry) {
-                      return Skelton(
-                        width: (Constants(context).width - 40),
-                        mTop: 16,
-                        height: 140,
-                      );
-                    }).toList(),
-                  ),
-                )
-              : ListView.builder(
-                  itemCount: 10,
-                  itemBuilder: (context, index) => BookingItem(
-                        booking: controller.bookings.results[index],
-                      )),
-        ));
+        child: Obx(() => SmartRefresher(
+              controller: refreshController,
+              enablePullUp: true,
+              onRefresh: () async {
+                if (controller.isLoading.value) {
+                  refreshController.refreshCompleted();
+                } else {
+                  refreshController.refreshFailed();
+                }
+              },
+              onLoading: () async {
+                if (controller.isLoading.value) {
+                  refreshController.loadComplete();
+                } else {
+                  refreshController.loadFailed();
+                }
+              },
+              child: LazyLoadScrollView(
+                onEndOfPage: controller.loadMore,
+                isLoading: controller.isLoading.value,
+                child: ListView.builder(
+                  physics: const AlwaysScrollableScrollPhysics(),
+                  itemCount: controller.bookings.length,
+                  itemBuilder: (context, index) {
+                    return BookingItem(
+                      booking: controller.bookings[index],
+                    );
+                  },
+                ),
+              ),
+            )));
   }
 }

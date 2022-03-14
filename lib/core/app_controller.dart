@@ -6,6 +6,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:get/get.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AppController extends GetxController {
   late ThemeData themeData;
@@ -31,6 +32,15 @@ class AppController extends GetxController {
     _restoreTheme();
     _restoreLocale();
     _initPosition();
+    _isExistToken();
+  }
+
+  void _isExistToken() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    String? token = pref.getString('token');
+    if (token != null) {
+      isLogin.value = true;
+    }
   }
 
   void _restoreTheme() {

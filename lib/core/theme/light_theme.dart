@@ -12,7 +12,7 @@ final ThemeData LightThemeData = ThemeData(
   textTheme: const TextTheme(
     headline1: TextStyle(
       color: AppColors.lightStrongText,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.normal,
       fontSize: 20,
     ),
     headline2: TextStyle(
@@ -22,17 +22,17 @@ final ThemeData LightThemeData = ThemeData(
     ),
     headline3: TextStyle(
       color: AppColors.lightStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 16,
     ),
     headline4: TextStyle(
       color: AppColors.lightStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 14,
     ),
     headline5: TextStyle(
       color: AppColors.lightStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 12,
     ),
     headline6: TextStyle(

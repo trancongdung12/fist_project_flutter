@@ -96,7 +96,7 @@ class Result {
   String businessId;
   String locationId;
   String code;
-  int discountValue;
+  dynamic discountValue;
   dynamic discountUnit;
   int actualAmount;
   DateTime createdAt;
@@ -112,9 +112,9 @@ class Result {
   int capacityNumber;
   dynamic paymentId;
   String platform;
-  String customerPhone;
+  dynamic customerPhone;
   dynamic paymentPeriod;
-  List<dynamic> extraServices;
+  dynamic extraServices;
   Location location;
 
   factory Result.fromJson(Map<String, dynamic> json) => Result(
@@ -156,7 +156,7 @@ class Result {
         platform: json["platform"],
         customerPhone: json["customerPhone"],
         paymentPeriod: json["paymentPeriod"],
-        extraServices: List<dynamic>.from(json["extraServices"].map((x) => x)),
+        extraServices: json["extraServices"],
         location: Location.fromJson(json["location"]),
       );
 
@@ -211,7 +211,7 @@ class CustomerInfo {
     required this.customerEmail,
   });
 
-  String phoneNumber;
+  dynamic phoneNumber;
   String customerName;
   String customerEmail;
 
@@ -392,7 +392,7 @@ class RoomType {
   String name;
   bool isActive;
   dynamic image;
-  String businessId;
+  dynamic businessId;
   String locationId;
   DateTime createdAt;
   DateTime updatedAt;
@@ -404,7 +404,7 @@ class RoomType {
   String currency;
   dynamic code;
   dynamic serviceReference;
-  List<String> gallery;
+  dynamic gallery;
   String serviceGroupId;
 
   factory RoomType.fromJson(Map<String, dynamic> json) => RoomType(
@@ -424,7 +424,7 @@ class RoomType {
         currency: json["currency"],
         code: json["code"],
         serviceReference: json["serviceReference"],
-        gallery: List<String>.from(json["gallery"].map((x) => x)),
+        gallery: json["gallery"],
         serviceGroupId: json["serviceGroupId"],
       );
 
@@ -635,7 +635,7 @@ class ServiceReference {
   DateTime createdAt;
   DateTime updatedAt;
   dynamic description;
-  String serviceGroupId;
+  dynamic serviceGroupId;
 
   factory ServiceReference.fromJson(Map<String, dynamic> json) =>
       ServiceReference(

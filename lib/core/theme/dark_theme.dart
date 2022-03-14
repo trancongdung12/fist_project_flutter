@@ -13,7 +13,7 @@ final ThemeData DarkThemeData = ThemeData(
   textTheme: const TextTheme(
     headline1: TextStyle(
       color: AppColors.darkStrongText,
-      fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.normal,
       fontSize: 20,
     ),
     headline2: TextStyle(
@@ -23,17 +23,17 @@ final ThemeData DarkThemeData = ThemeData(
     ),
     headline3: TextStyle(
       color: AppColors.darkStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 16,
     ),
     headline4: TextStyle(
       color: AppColors.darkStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 14,
     ),
     headline5: TextStyle(
       color: AppColors.darkStrongText,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
       fontSize: 12,
     ),
     headline6: TextStyle(

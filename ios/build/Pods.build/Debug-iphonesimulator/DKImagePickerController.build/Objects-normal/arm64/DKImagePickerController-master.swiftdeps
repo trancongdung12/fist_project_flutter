@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
 options: "d4c0577dbaf8c8fae9611aef0dcaa4954de5033d2e1c5f9ddbfa51db39ee962d"
-build_start_time: [1645081818, 978296995]
-build_end_time: [1645081832, 427966117]
+build_start_time: [1647269361, 335454940]
+build_end_time: [1647269367, 360746860]
 inputs:
   "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageBaseManager.swift": [1645029492, 300549268]
   "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageDataManager.swift": [1645029492, 299800634]
