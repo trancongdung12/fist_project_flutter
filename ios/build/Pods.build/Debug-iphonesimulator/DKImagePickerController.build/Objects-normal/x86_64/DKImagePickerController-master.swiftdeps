@@ -1,41 +1,41 @@
 version: "Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)"
 options: "d4c0577dbaf8c8fae9611aef0dcaa4954de5033d2e1c5f9ddbfa51db39ee962d"
-build_start_time: [1647269367, 481317043]
-build_end_time: [1647269376, 938760042]
+build_start_time: [1657787457, 505576133]
+build_end_time: [1657787470, 645359039]
 inputs:
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageBaseManager.swift": [1645029492, 300549268]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageDataManager.swift": [1645029492, 299800634]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageGroupDataManager.swift": [1645029492, 300268888]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset+Export.swift": [1645029492, 301191329]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset+Fetch.swift": [1645029492, 302011251]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset.swift": [1645029492, 302312850]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAssetGroup.swift": [1645029492, 301642417]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImageAssetExporter.swift": [1645029492, 303953170]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageBaseManager.swift": [1648046645, 263402462]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageDataManager.swift": [1648046645, 263030290]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/DKImageGroupDataManager.swift": [1648046645, 263221263]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset+Export.swift": [1648046645, 263854026]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset+Fetch.swift": [1648046645, 264287948]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAsset.swift": [1648046645, 264524459]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImageDataManager/Model/DKAssetGroup.swift": [1648046645, 264031410]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImageAssetExporter.swift": [1648046645, 265316247]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImageExtensionController.swift"
-  : [1645029492, 303390502]
+  : [1648046645, 265091419]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerController.swift"
-  : [1645029492, 304492950]
+  : [1648046645, 265554189]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKImagePickerControllerBaseUIDelegate.swift"
-  : [1645029492, 304934978]
+  : [1648046645, 265756130]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/DKPopoverViewController.swift"
-  : [1645029492, 305258274]
+  : [1648046645, 265939235]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/Resource/DKImagePickerControllerResource.swift"
-  : [1645029492, 343496322]
+  : [1648046645, 286041736]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupCellItemProtocol.swift"
-  : [1645029492, 309063434]
+  : [1648046645, 267622470]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailBaseCell.swift"
-  : [1645029492, 309523105]
+  : [1648046645, 267789840]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailCameraCell.swift"
-  : [1645029492, 308136940]
+  : [1648046645, 267279148]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailImageCell.swift"
-  : [1645029492, 309837818]
+  : [1648046645, 267952680]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/Cell/DKAssetGroupDetailVideoCell.swift"
-  : [1645029492, 308631896]
+  : [1648046645, 267455101]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKAssetGroupDetailVC.swift"
-  : [1645029492, 307014942]
+  : [1648046645, 266842365]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKAssetGroupGridLayout.swift"
-  : [1645029492, 306246280]
+  : [1648046645, 266515731]
   ? "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKAssetGroupListVC.swift"
-  : [1645029492, 310305356]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKPermissionView.swift": [1645029492, 305935382]
-  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/Extensions/DKImageExtensionGallery.swift": [1645029492, 297748088]
+  : [1648046645, 268130302]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/DKImagePickerController/View/DKPermissionView.swift": [1648046645, 266297817]
+  "/Users/dungtran/Desktop/Test/first/ios/Pods/DKImagePickerController/Sources/Extensions/DKImageExtensionGallery.swift": [1648046645, 262156963]

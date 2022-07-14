@@ -62,6 +62,67 @@ dependencies: \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/GeolocationHandler.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/ErrorCodes.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/geolocator_apple/geolocator_apple.framework/Headers/geolocator-umbrella.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/FLTGoogleMapsPlugin.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Modules/module.modulemap \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Modules/module.modulemap \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Modules/module.modulemap \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSDeprecationMacros.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCoordinateBounds.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GoogleMapsBase.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaSource.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSStrokeStyle.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSStyleSpan.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygonLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlayLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAccessibilityLabels.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapStyle.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds+GoogleMaps.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h \
+  /Users/dungtran/Desktop/Test/first/ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/GoogleMapController_Test.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/JsonConversions.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/GoogleMapPolylineController.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/GoogleMapPolygonController.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/GoogleMapMarkerController.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/GoogleMapController.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/GoogleMapCircleController.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/FLTGoogleMapTileOverlayController.h \
+  /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/google_maps_flutter/google_maps_flutter.framework/Headers/google_maps_flutter-umbrella.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/Headers/FLTImagePickerPlugin.h \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/Modules/module.modulemap \
   /Users/dungtran/Desktop/Test/first/build/ios/Debug-iphonesimulator/image_picker/image_picker.framework/Headers/FLTPHPickerSaveImageToPathOperation.h \

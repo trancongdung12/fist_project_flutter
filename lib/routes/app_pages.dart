@@ -8,6 +8,7 @@ import 'package:DungxApp/modules/login/login.dart';
 import 'package:DungxApp/modules/mailbox/mailbox.dart';
 import 'package:DungxApp/modules/mailbox/pages/inbox.dart';
 import 'package:DungxApp/modules/search/search.dart';
+import 'package:DungxApp/modules/search/search_result.dart';
 import 'package:DungxApp/modules/setting/pages/profile.dart';
 import 'package:DungxApp/modules/setting/setting.dart';
 import 'package:DungxApp/modules/space_detail/space_detail.dart';
@@ -75,6 +76,11 @@ class AppPages {
     GetPage(
       name: Routes.SEARCH,
       page: () => Search(),
+      // binding: SpaceDetailBinding(),
+    ),
+    GetPage(
+      name: Routes.SEARCH_RESULT,
+      page: () => SearchResult(),
       // binding: SpaceDetailBinding(),
     ),
   ];
