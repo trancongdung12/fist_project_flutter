@@ -27,7 +27,7 @@ class _SearchState extends State<Search> {
   Timer? _debounce;
 
   void _onSearchChanged(String textQuery) {
-    String GOOGLE_MAPS_API_KEY = 'AIzaSyBGD-JsPKOYC5Fr1BhCOL0l7kMc8E13hP8';
+    String GOOGLE_MAPS_API_KEY = '';
     if (_debounce?.isActive ?? false) _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 500), () async {
       final urlPlaces =
